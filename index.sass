@@ -1,0 +1,79 @@
+$screen-lg: 992px
+$font-family-default: 'Scope One', serif
+$font-family-heading: 'Note Sans SC', sans-serif
+$text-color-default: #000
+
+html
+  position: relative
+  height: 100%
+  font-size: 10px
+
+  @media (min-width: $screen-lg)
+    font-size: 14px
+
+body
+  display: block
+  position: relative
+  height: 100%
+  margin: 0
+  font-family: $font-family-default
+  font-size: 1.4rem
+
+main
+  display: flex
+  height: 100%
+  flex-flow: column nowrap
+  justify-content: center
+
+h1
+  margin: 0
+  font-family: $font-family-heading
+  font-size: 3.6rem
+  font-weight: normal
+  text-align: center
+
+  .sub
+    display: flex
+    height: 3rem
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: center
+    font-family: $font-family-default
+    font-size: 1.8rem
+
+  .lead
+    display: flex
+    height: 9rem
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: center
+    margin-top: 2rem
+
+.contacts
+  display: flex
+  height: 10rem
+  padding: 0
+  margin: 0
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: flex-end
+  list-style-type: none
+
+  a
+    color: $text-color-default
+    text-decoration: none
+
+.contact-link
+  &__icon
+    margin-right: 1rem
+
+.icon-mail
+  display: inline-block
+  width: auto
+  height: 1.3em
+
+  img
+    display: inline-block
+    width: auto
+    max-height: 100%
+    vertical-align: middle
