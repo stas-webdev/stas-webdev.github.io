@@ -2,6 +2,7 @@
 
   const loader = new window.Loader();
 
+
   document.addEventListener('DOMContentLoaded', () => {
 
     initHomeBgVideo();
@@ -18,7 +19,7 @@
       loader.hideOverlay();
       startHomeScreen();
       videoEl.play();
-    });
+    }, { once: true });
     videoEl.addEventListener('playing', () => {
       isPlaying = true;
       playBtn.classList.remove('play-btn--paused');
