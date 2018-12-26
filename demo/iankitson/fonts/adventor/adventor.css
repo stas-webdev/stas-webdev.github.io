@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Adventor';
+  src: url('TeXGyreAdventor-Regular.eot');
+  src: url('TeXGyreAdventor-Regular.woff2') format('woff2'),
+       url('TeXGyreAdventor-Regular.woff') format('woff'),
+       url('TeXGyreAdventor-Regular.ttf') format('truetype'),
+       url('TeXGyreAdventor-Regular.svg#TeXGyreAdventor-Regular') format('svg'),
+       url('TeXGyreAdventor-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adventor';
+  src: url('TeXGyreAdventor-Bold.eot');
+  src: url('TeXGyreAdventor-Bold.woff2') format('woff2'),
+       url('TeXGyreAdventor-Bold.woff') format('woff'),
+       url('TeXGyreAdventor-Bold.ttf') format('truetype'),
+       url('TeXGyreAdventor-Bold.svg#TeXGyreAdventor-Bold') format('svg'),
+       url('TeXGyreAdventor-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+}
