@@ -1,0 +1,196 @@
+@import "./fonts/bebasneue/stylesheet.css";
+
+html {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+
+body {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #020102;
+  font-family: 'Bebas Neue Book', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.2em;
+}
+
+.hlz-header {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 8.5rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.hlz-header__content {
+  display: flex;
+  margin: 0 auto;
+  flex-flow: column-reverse nowrap;
+  justify-content: flex-end;
+}
+
+.hlz-header__links {
+  margin-top: 1em;
+}
+
+.hlz-main {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.hlz-hero {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 5em;
+  box-sizing: border-box;
+}
+
+.hlz-hero__main {
+  display: block;
+  width: 244px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.hlz-hero__sub {
+  display: block;
+  width: 240px;
+  max-width: 50%;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hlz-phone {
+  text-transform: uppercase;
+}
+
+.hlz-phone::before {
+  content: 'No.';
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.hlz-socials a {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hlz-socials a + a {
+  margin-left: 2em;
+}
+
+.hlz-socials a:hover span,
+.hlz-socials a:focus span,
+.hlz-socials a:active span {
+  animation: glitch 0.5s infinite;
+}
+
+.hlz-socials .hlz-icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.hlz-bg {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.hlz-video-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#HlzBgVideo {
+  display: block;
+  width: 100%;
+  height: 100%;;
+  object-fit: cover;
+}
+
+@media (min-height: 768px) {
+  .hlz-hero {
+    display: flex;
+    padding-top: 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 988px) {
+  .hlz-header {
+    font-size: 1.8rem;
+  }
+
+  .hlz-header__content {
+    display: flex;
+    max-width: 160rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .hlz-hero__sub {
+    margin-top: 3em;
+  }
+
+  .hlz-socials .hlz-icon {
+    margin-right: 1em;
+  }
+}
+
+@keyframes glitch {
+  from {
+    text-shadow: 0 0px 0px white
+  }
+  20% {
+    text-shadow: 2px -2px 0px red
+  }
+  40% {
+    text-shadow: -2px 2px 0px green
+  }
+  60% {
+    text-shadow: 2px 2px 0px blue
+  }
+  80% {
+    text-shadow: -2px -2px 0px green
+  }
+  to {
+    text-shadow: 0px 0px 0px white
+  }
+}
